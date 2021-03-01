@@ -12,10 +12,42 @@ nav {
     display: flex;
     background-color: green;
     justify-content: space-around;
-    padding: 20px 0;
+    padding: 10px 0;
+    color:yellow;
+    align-items: center;
 }
 
+.nama {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
 nav ul  {
     display: flex;
     list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a {
+    color:lavenderblush;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: yellow;
+}
+
+/* Tampilan untuk tablet */
+@media screen and (max-width: 768px)    {
+    nav ul {
+        width: 50%;
+    }
+}
+
+/* Tampilan untuk HP */
+@media screen and (max-width: 576px)    {
+    nav ul {
+        display: none;
+    }
 }
