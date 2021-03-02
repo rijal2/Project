@@ -38,6 +38,18 @@ nav ul li a:hover{
     color: yellow;
 }
 
+/* Membuat Menu Humberger */
+.saklar {
+
+}
+
+.saklar span{
+    display: block;
+    height: 3px;
+    width: 28px;
+    background-color: honeydew;
+}
+
 /* Tampilan untuk tablet */
 @media screen and (max-width: 768px)    {
     nav ul {
