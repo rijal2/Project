@@ -4,6 +4,7 @@
 }
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-x: hidden;
 }
 
 /* Hiasan pada navbar */
@@ -12,14 +13,14 @@ nav {
     display: flex;
     background-color: green;
     justify-content: space-around;
-    padding: 10px 0;
+    height: 50px;
     color:yellow;
     align-items: center;
 }
 
-.nama {
+nav .nama {
     font-family: 'Pacifico', cursive;
-    font-size: 30px;
+    font-size: 20px;
     letter-spacing: 4px;
 }
 nav ul  {
@@ -32,6 +33,7 @@ nav ul  {
 nav ul li a {
     color:lavenderblush;
     text-decoration: none;
+    font-size: 0.8em;
 }
 
 nav ul li a:hover{
@@ -49,12 +51,13 @@ nav ul li a:hover{
 
 .saklar input{
     position: absolute;
-    width: 40px;
+    width: 50px;
     height: 28px;
-    left: -6px;
-    top: -3px;
+    left: -11px;
+    top: -4px;
     opacity: 0;
     cursor: pointer;
+    z-index: 2;
 }
 
 .saklar span{
@@ -63,7 +66,29 @@ nav ul li a:hover{
     width: 28px;
     background-color: honeydew;
     border-radius: 3px;
+    transition: 0.5s;
 }
+
+/* memberi animasi pada menu Humberger yang telah dibuat */
+.saklar span:nth-child(2)  {
+  transform-origin: 0 0;
+}
+
+.saklar span:nth-child(4)   {
+    transform-origin: 0 100%;
+}
+
+.saklar input:checked ~ span:nth-child(2)   {
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.saklar input:checked ~ span:nth-child(3)   {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.saklar input:checked ~ span:nth-child(4)   {
+    transform: rotate(-45deg);
 
 /* Tampilan untuk tablet */
 @media screen and (max-width: 768px)    {
@@ -74,7 +99,24 @@ nav ul li a:hover{
 
 /* Tampilan untuk HP */
 @media screen and (max-width: 576px)    {
+    .saklar {
+        display: flex;
+    }
     nav ul {
-        display: none;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        justify-content: space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background-color: green;
+        z-index: -1;
+        transform: translateX(100%);
+        transition: all 1s;
+    }
+
+    nav ul.slide    {
+        transform: translateX(0)
     }
 }
