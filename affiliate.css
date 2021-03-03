@@ -4,7 +4,7 @@
 }
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 /* Hiasan pada navbar */
@@ -12,32 +12,44 @@ body{
 nav {
     display: flex;
     background-color: green;
-    justify-content: space-around;
+    border-radius: 10px;
+    justify-content: space-between;
     height: 50px;
     color:yellow;
     align-items: center;
+    margin-top: 0;
+    margin: 2px;
+    flex: 1;
 }
 
 nav .nama {
     font-family: 'Pacifico', cursive;
     font-size: 20px;
     letter-spacing: 4px;
+    text-align: center;
+    flex: 2;
 }
 nav ul  {
     display: flex;
     list-style: none;
     width: 40%;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 nav ul li a {
     color:lavenderblush;
     text-decoration: none;
     font-size: 0.8em;
+    padding-right: 20px;
+}
+
+nav ul li:last-child  {
+    padding-right: 0;
 }
 
 nav ul li a:hover{
     color: yellow;
+    text-decoration: underline;
 }
 
 /* Membuat Menu Humberger */
@@ -47,6 +59,7 @@ nav ul li a:hover{
     height: 20px;
     justify-content: space-between;
     position: relative;   
+    margin-right: 10px;
 }
 
 .saklar input{
@@ -104,20 +117,20 @@ nav ul li a:hover{
     }
     nav ul {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 2px;
+        top: 3px;
         width: 50%;
-        height: 100vh;
+        height: 50vh;
         justify-content: space-evenly;
         flex-direction: column;
         align-items: center;
-        background-color: green;
+        background-color: rgb(13, 148, 13);
         z-index: -1;
-        transform: translateX(100%);
+        transform: translateY(-110%);
         transition: all 1s;
     }
 
     nav ul.slide    {
-        transform: translateX(0)
+        transform: translateY(0)
     }
 }
