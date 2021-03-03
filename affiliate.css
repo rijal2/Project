@@ -42,7 +42,7 @@ nav ul li a:hover{
 
 /* Membuat Menu Humberger */
 .saklar {
-    display: flex;
+    display: none;
     flex-direction: column;
     height: 20px;
     justify-content: space-between;
