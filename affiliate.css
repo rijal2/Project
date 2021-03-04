@@ -5,6 +5,7 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-y: hidden;
+    height: 1000px;
 }
 
 /* Hiasan pada navbar */
@@ -128,7 +129,7 @@ nav ul li a:hover{
         right: 3px;
         top: 3px;
         width: 25%;
-        height: 33vh;
+        height: 30vh;
         justify-content: flex-end;
         flex-direction: column;
         align-items: center;
