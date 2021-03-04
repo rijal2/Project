@@ -6,8 +6,10 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     overflow-y: hidden;
     height: 1000px;
+    background-color: maroon
 }
 
+/* ---------------------------------------------------------------------------------- */
 /* Hiasan pada navbar */
 
 nav {
@@ -112,6 +114,55 @@ nav ul li a:hover{
 .saklar input:checked ~ span:nth-child(4)   {
     transform: rotate(-45deg);
 }
+
+/* ==================================================================================== */
+/* Mengatur main yang didalamnya ada konten dan aside*/
+
+main    {
+    display: flex;
+    background-color:palegoldenrod;
+    margin: 20px 5px;
+
+
+}
+
+.konten-utama   {
+    flex: 5;
+    background-color: peru;
+    margin: 20px 5px;
+
+}
+
+aside   {
+    flex: 1;
+    background-color: powderblue;
+    margin: 20px 5px;
+    flex-direction: column;
+    justify-content:space-around;
+}
+
+/* ====================================================================================== */
+/* Mengatur isi dari konten utama */
+
+
+/* ====================================================================================== */
+/* Mengatur tampilan aside */
+aside div   {
+    align-content: center;
+}
+aside div p {
+    text-align: center;
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* Mengatur agar tampilan responsive */
+
 /* Tampilan untuk tablet */
 @media screen and (max-width: 768px)    {
     nav ul {
