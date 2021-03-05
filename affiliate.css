@@ -116,13 +116,25 @@ nav ul li a:hover{
 
 /* ==================================================================================== */
 /* mengatur gambar header */
+header  {
+    height: 670px;
+}
 
+div .isi-header {
+    height:400px;
+}
 .isi-header {
-    z-index: -2;
     display: flex;
     align-content: center;
 }
 
+.tulisan-header  {
+    color: gold;
+    text-align:right;
+    vertical-align: middle;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
 
 /* ==================================================================================== */
 /* Mengatur main yang didalamnya ada konten dan aside*/
@@ -201,9 +213,6 @@ aside tr    {
         display: flex;
     }
 
-    nav {
-        z-index: 10;
-    }
     nav ul {
         position: absolute;
         right: 3px;
@@ -213,8 +222,8 @@ aside tr    {
         justify-content: flex-end;
         flex-direction: column;
         align-items: center;
-        background-color: rgb(13, 148, 13);
-        z-index: -1;
+        background-color: green;
+        z-index: 0;
         transform: translateY(-110%);
         transition: all 1s;
     }
