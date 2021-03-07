@@ -175,6 +175,7 @@ main    {
     flex: 5;
     background-color: peru;
     margin: 20px 5px;
+    border-radius: 5px;
 
 }
 
@@ -187,16 +188,40 @@ aside   {
     justify-content:flex-start;
     align-items: center;
     list-style: none;
+    border-radius: 5px;
+    height: 300px;
 }
 
 /* ====================================================================================== */
 /* Mengatur isi dari konten utama */
 
+.konten-utama div   {
+    margin: 5px;
+}
+
+.konten-1   {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+
+.gambar-konten-1    {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.artikel-konten-1   {
+    flex: 1;
+}
 
 /* ====================================================================================== */
 /* Mengatur tampilan aside */
 aside div   {
     background-color: lightslategray;
+    border-radius: 5px;
 }
 
 aside div p {
@@ -210,6 +235,7 @@ aside div p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .tabel-profil {
@@ -217,10 +243,12 @@ aside div p {
     display: flex;
     justify-content: center;
     align-items:flex-start;
+    margin: 6px;
 }
 aside tr    {
     text-align: left;
-    font-size: 12px;
+    font-size: 16px;
+    margin: 4px;
 }
 
 
