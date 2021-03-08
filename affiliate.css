@@ -294,6 +294,12 @@ footer p    {
     text-align: center;
 }
 
+.gambar-footer  {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 footer a    {
     color: honeydew;
     text-decoration: none;
