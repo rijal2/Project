@@ -225,6 +225,10 @@ main    {
     justify-content: center;
 }
 
+p, dt, dl  {
+    text-align: justify;
+}
+
 .artikel-konten-1 h2, .artikel-konten-2 h2, .artikel-konten-3 h2   {
     color:orangered;
     font-size: 40px;
@@ -275,6 +279,30 @@ aside tr    {
     margin: 4px;
 }
 
+/* ====================================================================================== */
+/* Mengatur tampilan Footer */
+
+footer  {
+    background-color: black;
+    border-top: 5px solid gold;
+}
+
+footer p    {
+    color: white;
+    text-align: center;
+}
+
+footer a    {
+    color: honeydew;
+    text-decoration: none;
+    margin-left: 2px;
+    vertical-align: middle;
+}
+
+footer a:hover  {
+    color: yellow;
+    text-decoration: underline;
+}
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
